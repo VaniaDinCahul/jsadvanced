@@ -47,11 +47,64 @@ body {
     
 }
 
-.about-us .container {
+.header-block {
+    background-image: url(../src/img/background-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.header-block .header-info-block {
     background-color: rgb(255, 255, 255, 0.5);
 
     padding-top: 500px;
     padding-top: 500px;
 
+    margin: 0 auto;
     width: 48%;
+    height: 100%;
+}
+
+.info-block {
+    background-color: rgb(244,244,244);
+}
+
+.info-block .container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+}
+
+.info-block .container .left {
+    width: 50%;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    line-height: 36px;
+    margin-right: 16px;
+}
+
+.info-block .container .left p:first-child {
+    font-weight: lighter;
+}
+
+.info-block .container .left p:last-child {
+    font-weight: bold;
+}
+
+.info-block .container .right {
+    width: 50%;
+    text-align: center;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
