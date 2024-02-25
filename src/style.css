@@ -40,6 +40,11 @@ body {
     color: rgb(152, 54, 54);
 }
 
+.nav-bar .container a::selection {
+    text-decoration: none;
+    color: rgb(54, 141, 152);
+}
+
 .about-us {
     background-image: url(../src/img/background-1.jpeg);
     background-repeat: no-repeat;
@@ -101,10 +106,57 @@ body {
 .info-block .container .right {
     width: 50%;
     text-align: center;
-}
 
-.icon {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+}
+
+.icon-container {
+    display: inline-block;
+}
+
+.icon-container .left {
+    display: inline-block;
+}
+
+.icon-container .right {
+    display: inline-block;
+}
+
+.icon-container .left .icon-img-container{
+    background-color: rgb(55, 140, 169);
+    border-radius: 100%;
+    height: 82px;
+    width: 82px;
+}
+
+.icon-container .left .icon-img-container span{
+    position: relative;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+
+    height: 42px;
+    width: 42px;
+}
+
+.icon-container:nth-child(1) .left .icon-img-container span{
+    background-image: url(../src/img/research-icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon-container:nth-child(2) .left .icon-img-container span{
+    background-image: url(../src/img/settings-icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon-container:nth-child(3) .left .icon-img-container span{
+    background-image: url(../src/img/design-icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
